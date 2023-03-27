@@ -1,1 +1,97 @@
 
+/* Style for desktop view */
+.section {
+    /* Floats the section element to the left, allowing it to be displayed in a row */
+    float: left;
+    /* Sets the width of the section element to 33.33%, so that there are 3 sections in a row */
+    width: 33.33%;
+    /* Sets the box-sizing property to border-box, so that padding and border widths are included in the element's total width */
+    box-sizing: border-box;
+    /* Sets the padding inside the section element to 15 pixels */
+    padding: 15px;
+    /* Sets the border of the section element to 1 pixel solid black */
+    border: 1px solid black;
+    /* Sets the background color of the section element to a light gray */
+    background-color: #c5181887;
+    /* Sets the margin around the section element to 0 pixels */
+    margin: 0;
+  }
+  
+  /* Style for tablet view */
+  @media (max-width: 991px) {
+    /* Styles the section element in the tablet view as a block element, so that it takes up the full width of the screen */
+    .section {
+      display: block;
+      /* Sets the width of the section element to 100%, so that it takes up the full width of the screen */
+      width: 100%;
+      /* Sets the box-sizing property to border-box, so that padding and border widths are included in the element's total width */
+      box-sizing: border-box;
+      /* Sets the padding inside the section element to 15 pixels */
+      padding: 15px;
+      /* Sets the border of the section element to 1 pixel solid black */
+      border: 1px solid black;
+      /* Sets the background color of the section element to a light gray */
+      background-color: #f2f2f2;
+      /* Sets the margin around the section element to 0 pixels */
+      margin: 0;
+    }
+    /* Styles the first and second section elements in the tablet view to be 50% wide and float to the left, so that they are side-by-side */
+    .section:nth-child(1),
+    .section:nth-child(2) {
+      width: 50%;
+      float: left;
+    }
+  }
+  
+  /* Style for mobile view */
+  @media (max-width: 767px) {
+    /* Styles the section element in the mobile view as a block element, so that it takes up the full width of the screen */
+    .section {
+      display: block;
+      /* Sets the width of the section element to 100%, so that it takes up the full width of the screen */
+      width: 100%;
+      /* Sets the box-sizing property to border-box, so that padding and border widths are included in the element's total width */
+      box-sizing: border-box;
+      /* Sets the padding inside the section element to 15 pixels */
+      padding: 15px;
+      /* Sets the border of the section element to 1 pixel solid black */
+      border: 1px solid black;
+      /* Sets the background color of the section element to a light gray */
+      background-color: #f2f2f2;
+      /* Sets the margin around the section element to 0 pixels */
+      margin: 0;
+    }
+  }
+  
+  /* Style for section title */
+.section-title {
+    /* Sets the position of the section title element to relative, so that it is positioned relative to its normal position in the document flow */
+    position: relative;
+    /* Sets the width of the section title element to 100%, so that it spans the entire width of the section element */
+    width: 100%;
+    /* Sets the height of the section title element to 30 pixels */
+    height: 30px;
+    /* Sets the background color of the section title element to a dark gray */
+    background-color: #333;
+    /* Sets the color of the text inside the section title element to white */
+    color: white;
+    /* Sets the text alignment of the section title element to center */
+    text-align: center;
+    /* Sets the padding inside the section title element to 5 pixels */
+    padding: 5px;
+    /* Sets the box-sizing property to border-box, so that padding and border widths are included in the element's total width */
+    box-sizing: border-box;
+    /* Sets the border of the section title element to 1 pixel solid black */
+    border: 1px solid black;
+    /* Sets the top and right offset values of the section title element to 0 pixels, so that it is positioned at the top right corner of the section element */
+    top: 0;
+    right: 0;
+  }
+  
+  
+  
+  /* Style for section title text */
+  .section-title span {
+    font-size: 125%;
+    color: #333;
+  }
